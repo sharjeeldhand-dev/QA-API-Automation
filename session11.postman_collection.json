@@ -8,12 +8,62 @@
   "item": [
     {
       "name": "New Request",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r\n    pm.response.to.have.status(200);\r\n});\r\n\r\npm.test(\"Response is an array\", function () {\r\n    pm.expect(pm.response.json()).to.be.an(\"array\");\r\n});\r\n\r\npm.test(\"Response time is below 1000ms\", function () {\r\n    pm.expect(pm.response.responseTime).to.be.below(1000);\r\n});"
+            ]
+          }
+        }
+      ],
       "request": {
         "method": "GET",
         "header": [],
+        "url": {
+          "raw": "http://localhost:3000/employees",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "employees"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/employees/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "employees",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "POST",
+        "header": [],
         "body": {
           "mode": "raw",
-          "raw": "",
+          "raw": "{\r\n  \"name\": \"Ahmed Raza\",\r\n  \"email\": \"ahmed@example.com\",\r\n  \"department\": \"QA\",\r\n  \"salary\": 60000\r\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -21,16 +71,14 @@
           }
         },
         "url": {
-          "raw": "https://jsonplaceholder.typicode.com/posts/1",
-          "protocol": "https",
+          "raw": "http://localhost:3000/employees",
+          "protocol": "http",
           "host": [
-            "jsonplaceholder",
-            "typicode",
-            "com"
+            "localhost"
           ],
+          "port": "3000",
           "path": [
-            "posts",
-            "1"
+            "employees"
           ]
         }
       },

@@ -1,0 +1,68 @@
+{
+  "employees": [
+    {
+      "id": "1",
+      "name": "Ali Khan",
+      "email": "ali@example.com",
+      "department": "QA",
+      "salary": 50000
+    },
+    {
+      "id": "2",
+      "name": "Sara Ahmed",
+      "email": "sara@example.com",
+      "department": "Development",
+      "salary": 65000
+    },
+    {
+      "id": "3",
+      "name": "Usman Malik",
+      "email": "usman@example.com",
+      "department": "HR",
+      "salary": 55000
+    },
+    {
+      "name": "Ahmed Raza",
+      "email": "ahmed@example.com",
+      "department": "QA",
+      "salary": 60000,
+      "id": "vIrnfwoGHrQ"
+    },
+    {
+      "name": "Ahmed Raza",
+      "email": "ahmed@example.com",
+      "department": "QA",
+      "salary": 60000,
+      "id": "qeLb7lqF_aQ"
+    },
+    {
+      "name": "Ahmed Raza",
+      "email": "ahmed@example.com",
+      "department": "QA",
+      "salary": 60000,
+      "id": "_NPWTioozyI"
+    },
+    {
+      "name": "Ahmed Raza",
+      "email": "ahmed@example.com",
+      "department": "QA",
+      "salary": 60000,
+      "id": "luNE0TvGnEo"
+    },
+    {
+      "name": "Ahmed Raza",
+      "email": "ahmed@example.com",
+      "department": "QA",
+      "salary": 60000,
+      "id": "VVPPv4yqJho"
+    },
+    {
+      "name": "Ahmed Raza",
+      "email": "ahmed@example.com",
+      "department": "QA",
+      "salary": 60000,
+      "id": "iFzlxP_-S0k"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
